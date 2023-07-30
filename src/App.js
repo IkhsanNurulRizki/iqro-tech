@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import { Navbar } from './Components/Navbar';
+import { Hero } from './Components/Hero';
+import { Langkah } from './Components/Langkah';
+import { Tentang } from './Components/Tentang';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+  
   return (
-    <div className="App">
+    <div className="app">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
+      <Navbar />
+      <Hero />
+      <Langkah />
+      <Tentang />
+      {/* <div id="preloader"></div>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> */}
     </div>
   );
 }
