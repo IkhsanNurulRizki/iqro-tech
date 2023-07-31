@@ -7,8 +7,9 @@ import { useEffect } from 'react';
 import { Navbar } from './Components/Navbar';
 import { Hero } from './Components/Hero';
 import { Langkah } from './Components/Langkah';
+import Inti from './Components/Inti';
 import { Tentang } from './Components/Tentang';
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
 
@@ -216,6 +217,7 @@ function App() {
       <Navbar />
       <Hero />
       <Langkah />
+      <Inti />
       <Tentang />
       {/* <div id="preloader"></div>
       <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a> */}

@@ -12,8 +12,8 @@ export class Tentang extends Component{
       </div>
 
       <div className="row">
-        <div className="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <img src="./pic/about.jpg" className="img-fluid" alt=""/>
+        <div className="col-lg-6 mt-12" data-aos="fade-right" data-aos-delay="100">
+          <img src="./pic/logo.png" className="img-fluid" alt="logo"/>
         </div>
         <div className="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
           <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
